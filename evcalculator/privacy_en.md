@@ -11,7 +11,7 @@ This privacy policy describes how the app "EV Calculator" (hereinafter "the app"
 ### 2. Data Controller
 
 Stefan Beyer
-Email: stefanjbeyer@icloud.com
+Email: evcalculator@icloud.com
 
 ### 3. Principle: Local Data Processing
 
@@ -96,4 +96,4 @@ This privacy policy may be updated with app updates. Significant changes will be
 ### 13. Contact
 
 For privacy-related questions, contact us at:
-stefanjbeyer@icloud.com
+evcalculator@icloud.com

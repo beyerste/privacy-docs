@@ -1,12 +1,9 @@
 # Datenschutzrichtlinie
 
 **EV Calculator**
-Stand / Last updated: 19. März 2026
+Stand: 19. März 2026
 
 ---
-
-## Deutsch
-
 ### 1. Einleitung
 
 Diese Datenschutzrichtlinie beschreibt, wie die App „EV Calculator" (nachfolgend „die App") mit Ihren Daten umgeht. Der Schutz Ihrer Privatsphäre ist uns wichtig. Die App wurde so entwickelt, dass sie so wenig Daten wie möglich erhebt und verarbeitet.

@@ -11,7 +11,7 @@ Diese Datenschutzrichtlinie beschreibt, wie die App „EV Calculator" (nachfolge
 ### 2. Verantwortlicher
 
 Stefan Beyer
-E-Mail: stefanjbeyer@icloud.com
+E-Mail: evcalculator@icloud.com
 
 ### 3. Grundsatz: Lokale Datenverarbeitung
 
@@ -96,4 +96,4 @@ Diese Datenschutzrichtlinie kann bei Updates der App angepasst werden. Wesentlic
 ### 13. Kontakt
 
 Bei Fragen zum Datenschutz erreichen Sie uns unter:
-stefanjbeyer@icloud.com
+evcalculator@icloud.com

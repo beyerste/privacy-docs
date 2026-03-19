@@ -1,2 +1,0 @@
-# privacy-docs
-Privacy Documents

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Calculator — Support</title>
+    <style>
+        :root {
+            --green-dark: #0D5C1A;
+            --green-mid: #1B8A2A;
+            --green-light: #4CAF50;
+            --bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --text: #1a1a1a;
+            --text-muted: #6c757d;
+            --border: #e0e0e0;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #1a1a1a;
+                --card-bg: #2a2a2a;
+                --text: #f0f0f0;
+                --text-muted: #a0a0a0;
+                --border: #404040;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--green-mid), var(--green-dark));
+            color: white;
+            padding: 3rem 1.5rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .lang-switch {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .lang-switch button {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 1px solid rgba(255,255,255,0.4);
+            padding: 0.4rem 1.2rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .lang-switch button.active,
+        .lang-switch button:hover {
+            background: rgba(255,255,255,0.35);
+        }
+
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border);
+        }
+
+        .card h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: var(--green-mid);
+        }
+
+        .card p, .card li {
+            font-size: 0.95rem;
+            color: var(--text);
+        }
+
+        .card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .card ul li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .card ul li:last-child {
+            border-bottom: none;
+        }
+
+        .card ul li strong {
+            display: block;
+            margin-bottom: 0.15rem;
+        }
+
+        .card ul li span {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        a {
+            color: var(--green-mid);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--green-mid), var(--green-dark));
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 0.5rem;
+        }
+
+        .contact-btn:hover {
+            opacity: 0.9;
+            text-decoration: none;
+        }
+
+        .version {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-top: 2rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        footer a {
+            color: var(--text-muted);
+        }
+
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>EV Calculator</h1>
+    <p class="subtitle-de">Support & Hilfe</p>
+    <p class="subtitle-en hidden">Support & Help</p>
+    <div class="lang-switch">
+        <button id="btn-de" class="active" onclick="setLang('de')">Deutsch</button>
+        <button id="btn-en" onclick="setLang('en')">English</button>
+    </div>
+</header>
+
+<main>
+
+    <!-- ===== DEUTSCH ===== -->
+    <div id="content-de">
+
+        <div class="card">
+            <h2>Kontakt</h2>
+            <p>Bei Fragen, Problemen oder Feedback freue ich mich über eine Nachricht:</p>
+            <br>
+            <a class="contact-btn" href="mailto:stefanjbeyer@icloud.com?subject=EV%20Calculator%20Support">E-Mail senden</a>
+        </div>
+
+        <div class="card">
+            <h2>Häufige Fragen (FAQ)</h2>
+            <ul>
+                <li>
+                    <strong>Wie füge ich ein Fahrzeug hinzu?</strong>
+                    <span>Öffne das Menü (☰) oben links und wähle „Fahrzeuge". Dort kannst du beliebig viele Fahrzeugprofile anlegen und bearbeiten.</span>
+                </li>
+                <li>
+                    <strong>Woher kommen die Verbrauchswerte?</strong>
+                    <span>Du gibst die Verbrauchswerte selbst ein — basierend auf deinen echten Erfahrungswerten oder den Herstellerangaben. Es gibt Profile für WLTP, Stadt, Land und Autobahn.</span>
+                </li>
+                <li>
+                    <strong>Wie genau ist die Reichweitenberechnung?</strong>
+                    <span>Die Berechnung basiert auf deinen eingegebenen Verbrauchswerten. Je genauer deine Werte, desto genauer die Reichweite. Faktoren wie Temperatur, Topografie oder Fahrstil werden nicht automatisch berücksichtigt.</span>
+                </li>
+                <li>
+                    <strong>Woher kommen die Ladestationen?</strong>
+                    <span>Die Ladestationsdaten stammen von GoingElectric oder Open Charge Map. Du kannst den Anbieter in den Einstellungen wählen.</span>
+                </li>
+                <li>
+                    <strong>Werden meine Daten in die Cloud hochgeladen?</strong>
+                    <span>Nein. Alle Daten (Fahrzeuge, Einstellungen) bleiben ausschließlich lokal auf deinem Gerät. Es gibt keine Cloud-Synchronisation, kein Tracking und keine Werbung.</span>
+                </li>
+                <li>
+                    <strong>Funktioniert die App offline?</strong>
+                    <span>Der Rechner und die Batterietabelle funktionieren vollständig offline. Für die Kartenansicht, Routenplanung und Ladestationssuche wird eine Internetverbindung benötigt.</span>
+                </li>
+                <li>
+                    <strong>Wie funktioniert die Routenplanung mit Ladestopps?</strong>
+                    <span>Gib ein Ziel ein — die App berechnet die Route, analysiert den Energiebedarf pro Straßentyp (Stadt/Land/Autobahn) und plant automatisch Ladestopps ein, wenn die Batterie nicht reicht.</span>
+                </li>
+                <li>
+                    <strong>Unterstützt die App Apple CarPlay?</strong>
+                    <span>Ja. Auf dem CarPlay-Display werden Ladestationen in der Nähe angezeigt und du kannst direkt dorthin navigieren. Außerdem siehst du deine Fahrzeugdaten und Reichweite.</span>
+                </li>
+                <li>
+                    <strong>Kann ich Kilometer und Meilen umschalten?</strong>
+                    <span>Ja. Unter Einstellungen kannst du zwischen Kilometern und Meilen wechseln. Auch die Währung (EUR, USD, GBP, CHF) ist einstellbar.</span>
+                </li>
+                <li>
+                    <strong>Die App zeigt keine Ladestationen an — was tun?</strong>
+                    <span>Prüfe in den Einstellungen, ob ein Datenanbieter ausgewählt ist (GoingElectric oder Open Charge Map). Für Open Charge Map wird ein API-Schlüssel benötigt. Stelle außerdem sicher, dass eine Internetverbindung besteht.</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Systemanforderungen</h2>
+            <ul>
+                <li><strong>Betriebssystem</strong> <span>iOS 17.0 oder neuer</span></li>
+                <li><strong>CarPlay</strong> <span>Erfordert ein CarPlay-fähiges Fahrzeug</span></li>
+                <li><strong>Standort</strong> <span>Für Karte und Ladestationssuche (optional)</span></li>
+                <li><strong>Internet</strong> <span>Für Karte, Routenplanung und Ladestationen</span></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Datenschutz</h2>
+            <p>Deine Privatsphäre ist uns wichtig. Die App sammelt keine personenbezogenen Daten und enthält keine Werbung oder Tracking.</p>
+            <br>
+            <p><a href="privacy.html">Datenschutzrichtlinie lesen →</a></p>
+        </div>
+
+    </div>
+
+    <!-- ===== ENGLISH ===== -->
+    <div id="content-en" class="hidden">
+
+        <div class="card">
+            <h2>Contact</h2>
+            <p>For questions, issues, or feedback, feel free to reach out:</p>
+            <br>
+            <a class="contact-btn" href="mailto:stefanjbeyer@icloud.com?subject=EV%20Calculator%20Support">Send Email</a>
+        </div>
+
+        <div class="card">
+            <h2>Frequently Asked Questions (FAQ)</h2>
+            <ul>
+                <li>
+                    <strong>How do I add a vehicle?</strong>
+                    <span>Open the menu (☰) in the top left and select "Vehicles". There you can create and edit as many vehicle profiles as you like.</span>
+                </li>
+                <li>
+                    <strong>Where do the consumption values come from?</strong>
+                    <span>You enter the consumption values yourself — based on your real-world experience or manufacturer specifications. There are profiles for WLTP, city, rural, and highway driving.</span>
+                </li>
+                <li>
+                    <strong>How accurate is the range calculation?</strong>
+                    <span>The calculation is based on your entered consumption values. The more accurate your values, the more accurate the range. Factors like temperature, terrain, or driving style are not automatically considered.</span>
+                </li>
+                <li>
+                    <strong>Where does the charging station data come from?</strong>
+                    <span>Charging station data comes from GoingElectric or Open Charge Map. You can choose the provider in Settings.</span>
+                </li>
+                <li>
+                    <strong>Is my data uploaded to the cloud?</strong>
+                    <span>No. All data (vehicles, settings) stays exclusively on your device. There is no cloud sync, no tracking, and no advertising.</span>
+                </li>
+                <li>
+                    <strong>Does the app work offline?</strong>
+                    <span>The calculator and battery table work fully offline. The map view, route planning, and charging station search require an internet connection.</span>
+                </li>
+                <li>
+                    <strong>How does route planning with charging stops work?</strong>
+                    <span>Enter a destination — the app calculates the route, analyzes energy consumption by road type (city/rural/highway), and automatically plans charging stops when the battery isn't enough.</span>
+                </li>
+                <li>
+                    <strong>Does the app support Apple CarPlay?</strong>
+                    <span>Yes. The CarPlay display shows nearby charging stations and lets you navigate directly to them. You can also view your vehicle data and range.</span>
+                </li>
+                <li>
+                    <strong>Can I switch between kilometers and miles?</strong>
+                    <span>Yes. In Settings, you can switch between kilometers and miles. The currency (EUR, USD, GBP, CHF) is also configurable.</span>
+                </li>
+                <li>
+                    <strong>The app doesn't show charging stations — what should I do?</strong>
+                    <span>Check in Settings that a data provider is selected (GoingElectric or Open Charge Map). Open Charge Map requires an API key. Also make sure you have an internet connection.</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>System Requirements</h2>
+            <ul>
+                <li><strong>Operating System</strong> <span>iOS 17.0 or later</span></li>
+                <li><strong>CarPlay</strong> <span>Requires a CarPlay-compatible vehicle</span></li>
+                <li><strong>Location</strong> <span>For map and charging station search (optional)</span></li>
+                <li><strong>Internet</strong> <span>For map, route planning, and charging stations</span></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Privacy</h2>
+            <p>Your privacy matters to us. The app does not collect personal data and contains no advertising or tracking.</p>
+            <br>
+            <p><a href="privacy.html">Read Privacy Policy →</a></p>
+        </div>
+
+    </div>
+
+    <p class="version">EV Calculator v1.0</p>
+
+</main>
+
+<footer>
+    <p>© 2026 Stefan Beyer · <a href="mailto:stefanjbeyer@icloud.com">stefanjbeyer@icloud.com</a></p>
+</footer>
+
+<script>
+    function setLang(lang) {
+        document.getElementById('content-de').classList.toggle('hidden', lang !== 'de');
+        document.getElementById('content-en').classList.toggle('hidden', lang !== 'en');
+        document.querySelector('.subtitle-de').classList.toggle('hidden', lang !== 'de');
+        document.querySelector('.subtitle-en').classList.toggle('hidden', lang !== 'en');
+        document.getElementById('btn-de').classList.toggle('active', lang === 'de');
+        document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+        document.documentElement.lang = lang;
+    }
+
+    // Auto-detect browser language
+    if (navigator.language && !navigator.language.startsWith('de')) {
+        setLang('en');
+    }
+</script>
+
+</body>
+</html>

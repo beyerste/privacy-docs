@@ -5,25 +5,6 @@ Eine iOS-App zur manuellen Berechnung von Reichweite, Energiebedarf und Ladeplan
 
 ---
 
-## Inhaltsverzeichnis
-
-1. [Features](#features)
-2. [Architektur](#architektur)
-3. [Projektstruktur](#projektstruktur)
-4. [Datenmodelle](#datenmodelle)
-5. [Views im Detail](#views-im-detail)
-6. [Karte & Routenplanung](#karte--routenplanung)
-7. [Ladestation-Suche](#ladestation-suche)
-8. [CarPlay-Integration](#carplay-integration)
-9. [Einstellungen & Persistierung](#einstellungen--persistierung)
-10. [Lokalisierung](#lokalisierung)
-11. [Technologien](#technologien)
-12. [Voraussetzungen](#voraussetzungen)
-13. [Build & Konfiguration](#build--konfiguration)
-14. [Lizenz](#lizenz)
-
----
-
 ## Features
 
 ### Rechner (`CalculatorView`)

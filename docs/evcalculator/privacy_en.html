@@ -1,12 +1,206 @@
-<h1 id="privacy-policy">Privacy Policy</h1>
-<p><strong>EV Calculator</strong>
-Last updated: 19. März 2026</p>
-<hr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Calculator — Privacy Policy</title>
+    <style>
+        :root {
+            --green-dark: #0D5C1A;
+            --green-mid: #1B8A2A;
+            --green-light: #4CAF50;
+            --bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --text: #1a1a1a;
+            --text-muted: #6c757d;
+            --border: #e0e0e0;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #1a1a1a;
+                --card-bg: #2a2a2a;
+                --text: #f0f0f0;
+                --text-muted: #a0a0a0;
+                --border: #404040;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--green-mid), var(--green-dark));
+            color: white;
+            padding: 3rem 1.5rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .lang-switch {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .lang-switch button {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 1px solid rgba(255,255,255,0.4);
+            padding: 0.4rem 1.2rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .lang-switch button.active,
+        .lang-switch button:hover {
+            background: rgba(255,255,255,0.35);
+        }
+
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border);
+        }
+
+        .card h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: var(--green-mid);
+        }
+
+        .card p, .card li {
+            font-size: 0.95rem;
+            color: var(--text);
+        }
+
+        .card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .card ul li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .card ul li:last-child {
+            border-bottom: none;
+        }
+
+        .card ul li strong {
+            display: block;
+            margin-bottom: 0.15rem;
+        }
+
+        .card ul li span {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        a {
+            color: var(--green-mid);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--green-mid), var(--green-dark));
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 0.5rem;
+        }
+
+        .contact-btn:hover {
+            opacity: 0.9;
+            text-decoration: none;
+        }
+
+        .version {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-top: 2rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        footer a {
+            color: var(--text-muted);
+        }
+
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>EV Calculator</h1>
+    <p class="subtitle-en hidden">Privacy Policy<br>
+      Last updated: 19. März 2026
+    </p>
+
+</header>
+
+<main>
+<div class="card">
 <h3 id="1-introduction">1. Introduction</h3>
 <p>This privacy policy describes how the app &quot;EV Calculator&quot; (hereinafter &quot;the app&quot;) handles your data. Protecting your privacy is important to us. The app was designed to collect and process as little data as possible.</p>
-<h3 id="2-data-controller">2. Data Controller</h3>
+</div>
+<div class="card">
+  <h3 id="2-data-controller">2. Data Controller</h3>
 <p>Stefan Beyer
 Email: evcalculator@icloud.com</p>
+</div>
+<div class="card">
 <h3 id="3-principle-local-data-processing">3. Principle: Local Data Processing</h3>
 <p>The app stores all your data <strong>exclusively on your device</strong>. There is:</p>
 <ul>
@@ -16,6 +210,8 @@ Email: evcalculator@icloud.com</p>
 <li>No advertising</li>
 <li>No sharing of data with third parties for advertising or analytics purposes</li>
 </ul>
+</div>
+<div class="card">
 <h3 id="4-what-data-is-stored-">4. What Data Is Stored?</h3>
 <h4 id="4-1-vehicle-data">4.1 Vehicle Data</h4>
 <p>You can create vehicle profiles with technical data (name, battery capacity, consumption values, charging power, electricity price). This data is stored exclusively in the local app database (SwiftData) on your device.</p>
@@ -23,7 +219,9 @@ Email: evcalculator@icloud.com</p>
 <p>Your app settings (language, units, currency, consumption mode, display mode, charger filters) are stored locally in your device&#39;s UserDefaults.</p>
 <h4 id="4-3-api-keys">4.3 API Keys</h4>
 <p>If you enter a custom API key for Open Charge Map, it is stored locally on your device. It is only used for direct requests to the respective service.</p>
-<h3 id="5-location-data">5. Location Data</h3>
+</div>
+<div class="card">
+  <h3 id="5-location-data">5. Location Data</h3>
 <p>The app uses your location <strong>only while actively in use</strong> (&quot;While Using&quot;). Your location is needed for:</p>
 <ul>
 <li>Displaying your position on the map</li>
@@ -32,7 +230,9 @@ Email: evcalculator@icloud.com</p>
 <li>Route planning from your location to a destination</li>
 </ul>
 <p><strong>Your location is not permanently stored</strong> and is not shared with third parties for advertising or analytics purposes. The location is only kept in memory while the app is active.</p>
-<h3 id="6-network-communication">6. Network Communication</h3>
+</div>
+<div class="card">
+  <h3 id="6-network-communication">6. Network Communication</h3>
 <p>The app communicates with external services only in the following cases:</p>
 <h4 id="6-1-charging-station-search">6.1 Charging Station Search</h4>
 <p>When you actively search for charging stations, the following data is transmitted to the selected provider:</p>
@@ -45,13 +245,20 @@ Email: evcalculator@icloud.com</p>
 <p>When planning routes, start and destination coordinates are processed through Apple&#39;s MapKit service. Apple&#39;s privacy policy applies: <a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></p>
 <h4 id="6-3-no-other-connections">6.3 No Other Connections</h4>
 <p>The app does not establish any other network connections. There are no analytics servers, no ad networks, and no other third-party services.</p>
-<h3 id="7-apple-carplay">7. Apple CarPlay</h3>
+
+  <h3 id="7-apple-carplay">7. Apple CarPlay</h3>
 <p>The CarPlay feature displays charging stations and vehicle data on the CarPlay screen. It uses the same data and services as the main app (see sections 5 and 6). No additional data is collected.</p>
-<h3 id="8-data-sharing-with-third-parties">8. Data Sharing with Third Parties</h3>
+</div>
+<div class="card">
+  <h3 id="8-data-sharing-with-third-parties">8. Data Sharing with Third Parties</h3>
 <p>The app does not share personal data with third parties, except in the cases described in section 6 (charging station search and route calculation), where technically necessary data (coordinates) is transmitted to the respective services.</p>
-<h3 id="9-data-security">9. Data Security</h3>
+</div>
+<div class="card">
+  <h3 id="9-data-security">9. Data Security</h3>
 <p>All locally stored data is subject to the security mechanisms of your iOS device (app sandbox, device encryption). Communication with external services is conducted exclusively via encrypted HTTPS connections.</p>
-<h3 id="10-your-rights">10. Your Rights</h3>
+</div>
+<div class="card">
+  <h3 id="10-your-rights">10. Your Rights</h3>
 <p>You can at any time:</p>
 <ul>
 <li>Delete all vehicle data within the app</li>
@@ -59,10 +266,21 @@ Email: evcalculator@icloud.com</p>
 <li>Completely remove the app and all stored data from your device</li>
 </ul>
 <p>Since no data is stored on our servers, requests for access, correction, or deletion do not apply — you have full control over your data on your device.</p>
-<h3 id="11-children">11. Children</h3>
+</div>
+<div class="card">
+  <h3 id="11-children">11. Children</h3>
 <p>The app is not directed at children under 13 and does not knowingly collect data from children.</p>
-<h3 id="12-changes">12. Changes</h3>
+</div>
+<div class="card">
+  <h3 id="12-changes">12. Changes</h3>
 <p>This privacy policy may be updated with app updates. Significant changes will be communicated in the app&#39;s release notes.</p>
-<h3 id="13-contact">13. Contact</h3>
+</div>
+<div class="card">
+  <h3 id="13-contact">13. Contact</h3>
 <p>For privacy-related questions, contact us at:
 evcalculator@icloud.com</p>
+</main>
+</body>
+</html>
+
+  

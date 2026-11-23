@@ -131,8 +131,7 @@ it again, and please report it via *Settings → Feedback*.
 ## 4. Privacy
 
 eDriver works without an account, advertising or tracking. For details, see the
-[privacy policy](/eDriver/privacy/en).
-
+[privacy policy](https://beyerste.github.io/privacy-docs/eDriver/support/de/)
 ---
 
 ## 5. Acknowledgements

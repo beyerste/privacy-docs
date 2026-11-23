@@ -131,7 +131,7 @@ Navigation und starte sie erneut, und melde uns den Fall bitte über *Einstellun
 ## 4. Datenschutz
 
 eDriver kommt ohne Benutzerkonto, Werbung und Tracking aus. Details findest du in der
-[Datenschutzerklärung](</eDriver/privacy/de/>).
+[Datenschutzerklärung]<https://beyerste.github.io/privacy-docs/eDriver/support/de/>.
 
 ---
 

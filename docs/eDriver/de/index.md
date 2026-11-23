@@ -11,9 +11,6 @@ Rechte du nach der Datenschutz-Grundverordnung (DSGVO) hast.
 ## 1. Verantwortlicher
 
 Stefan Beyer
-[Straße Hausnummer]
-[PLZ Ort]
-Deutschland
 
 E-Mail: evcalculator@icloud.com
 
